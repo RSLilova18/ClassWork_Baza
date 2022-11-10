@@ -12,4 +12,8 @@ public class BazaApplication {
         SpringApplication.run(BazaApplication.class, args);
     }
 
+
+    dao.createTournamentTable();
+
+       logger.info("French Players: {}", dao.getPlayerByNationality("France") );
 }
